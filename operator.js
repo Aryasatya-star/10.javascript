@@ -39,11 +39,10 @@
 //     harga[3]*jumlah[4];
 // console.log("Totalnya", total, "rata-rata", total/4);
 
-let nilaiUjian = [80, 90, 75, 85, 70];
-let totalNilai = nilaiUjian.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+let nilaiUjian = [80, 75, 65, 45, 90, 90, 78, 80,35, 95];
+let totalNilai = nilaiUjian.reduce((startValue, currentValue) => startValue + currentValue, 0);
 let rataRata = totalNilai / nilaiUjian.length;
-console.log("Total Nilai:", totalNilai);
-console.log("Rata-rata Nilai:", rataRata);
+console.log("Nilai Rata-Rata ICT Lv. X adalah =", rataRata);
 
 // let namaDepan = "John";
 // let namaBelakang = "Doe";
