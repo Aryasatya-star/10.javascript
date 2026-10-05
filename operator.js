@@ -39,7 +39,7 @@
 //     harga[3]*jumlah[4];
 // console.log("Totalnya", total, "rata-rata", total/4);
 
-let nilaiUjian = [80, 90, 75, 85, 95];
+let nilaiUjian = [80, 90, 75, 85, 70];
 let totalNilai = nilaiUjian.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 let rataRata = totalNilai / nilaiUjian.length;
 console.log("Total Nilai:", totalNilai);
