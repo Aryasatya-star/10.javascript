@@ -81,24 +81,93 @@
 //   console.log("Berat kayu ini adalah " + beratKayu + " kg");
 // }
 
-let menu = ["Katsu", "Telur Asin", "Nasi Goreng", "Mie Ayam", "Sate Ayam"];
-for (let i = 0; i < menu.length; i++) {
-  if (menu[i] == "Katsu") {
-    console.log("Aku Makan", menu[i]);
 
-  } else if (menu[i] == "Telur Asin") {
-    console.log("Aku Makan", menu[i]);
+// let alatTulis = ["Crayon", "Bolpoint", "Pensil", "Alat Lukis", "Pilok"];
+// for (let index = 0; index < alatTulis.length; index++) {
+//   if (alatTulis[index] == "Bolpoint") {
+//     console.log("Aku Menulis Menggunakan", alatTulis[index]);
+//   } else if (alatTulis[index] == "Pensil") {
+//     console.log("Aku Menulis", alatTulis[index]);
+//   } else if (alatTulis[index] == "Crayon") {
+//     console.log("Aku Menggambar dengan", alatTulis[index]);
+//   } else {
+//     console.log("Aku Tidak Akan Menggunakan", alatTulis[index]);
+//   }
+// }
+
+// let Menu = "Nasi Goreng";
+// if (Menu == "Katsu") {
+//   console.log("Aku Makan", Menu);
+// }else if (Menu == "Telur Asin") {
+//   console.log("Aku Makan", Menu);
+// } else if (Menu != "Katsu" && Menu != "Telur Asin") {
+//   console.log("Aku Tidak Makan", Menu);
+// }
+
+
+// let alatTulis2 = "lukis";
+// if (alatTulis2 == "Pensil") {
+//   console.log("Alat tulisnya", alatTulis2, "Saya menulis");
+// }else if (alatTulis2 == "Bolpoint") {
+//   console.log("Alat tulisnya", alatTulis2, "Saya menulis");
+// } else if (alatTulis2 != "Bolpoint" && alatTulis2 != "Pensil" && alatTulis2 != "Crayon") {
+//   console.log("Alat tulisnya", alatTulis2, "Saya tidak akan menggunakan");
+// } else if (alatTulis2 == "Crayon") {
+//   console.log("Alat tulisnya", alatTulis2, "Saya menggambar");
+// }
+
+// let NilaiUjian = ["80", "76", "90", "60", "100"];
+// for (let index = 0; index < NilaiUjian.length; index++) {
+//   if (NilaiUjian[index] >= 90) {
+//     console.log("Nilai Ujian", NilaiUjian[index], "Mendapatkan Nilai A");
+//   } else if (NilaiUjian[index] >= 80 && NilaiUjian[index] < 90) {
+//     console.log("Nilai Ujian", NilaiUjian[index], "Mendapatkan Nilai B");
+//   } else if (NilaiUjian[index] >= 70 && NilaiUjian[index] < 80) {
+//     console.log("Nilai Ujian", NilaiUjian[index], "Mendapatkan Nilai C");
+//   } else if (NilaiUjian[index] >= 60 && NilaiUjian[index] < 70) {
+//     console.log("Nilai Ujian", NilaiUjian[index], "Mendapatkan Nilai D");
+//   } else if (NilaiUjian[index] < 60) {
+//     console.log("Nilai Ujian", NilaiUjian[index], "Mendapatkan Nilai E");
+//   }
+// }
+
+// let Nilai = 81;
+// if (Nilai >= 90) {
+//   console.log("Nilai", Nilai, "Mendapatkan Nilai A");
+// }else if (Nilai >= 80 && Nilai < 90) {
+//   console.log("Nilai", Nilai, "Mendapatkan Nilai B");
+// }else{
+//   console.log("Nilai", Nilai, "Mendapatkan Nilai C");
+// }
+
+// let punyaTiket = false;
+// let punyaUndangan = false;
+// if (punyaTiket && punyaUndangan) {
+//   console.log("Boleh Masuk");
+// } else if (punyaTiket || punyaUndangan) {
+//   console.log("Boleh Masuk dengan" + (punyaTiket ? " Tiket" : "") + (punyaUndangan ? " Undangan" : ""));
+// } else {
+//   console.log("Tidak Boleh Masuk");
+// }
+
+// let angka = [10,15, 20, 25];
+// let hasil = angka.filter((num) => num % 2 === 0);
+// console.log("Angka Genap:", hasil);
+
+// if (angka[3] % 2 === 0) {
+//   console.log(angka[3], "adalah angka genap");
+// }else{
+//   console.log(angka[3], "adalah angka ganjil");
+// }
+
+let Nama = ["John Doe", "Jane Doe", "Jane", "Smith Weber", "Alice Weber", "Bob"];
+let hasilNama = Nama.filter((nama) => nama === "Jane Doe");
+console.log("Hasil Filter Nama:", hasilNama);
+
+for (let index = 0; index < Nama.length; index++) {
+  if (Nama[index] === "Jane Doe") {
+    console.log(Nama[index], "adalah nama yang dicari");
   } else {
-    console.log("Aku Tidak Makan", menu[i]);
+    console.log(Nama[index], "bukan nama yang dicari");
   }
 }
-
-let Menu = "Nasi Goreng";
-if (Menu == "Katsu") {
-  console.log("Aku Makan", Menu);
-}else if (Menu == "Telur Asin") {
-  console.log("Aku Makan", Menu);
-} else if (Menu != "Katsu" && Menu != "Telur Asin") {
-  console.log("Aku Tidak Makan", Menu);
-}
-
