@@ -35,7 +35,32 @@
 //     console.log(i);
 // }
 
-let number = [0, 1, 2, 3, 4, 5];
+let number = [1,2,3,4,5,6,7,8,9,10];
 
-let genap = number.filter((num) => num % 2 === 0);
-console.log("Angka Genap:", genap);
+// let genap = number.filter((num) => num % 2 === 0);
+// console.log("Angka Genap:", genap);
+
+// for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 2 === 0) {
+//         console.log("Angka Genap:", number[i]);
+//     } else {
+//         console.log("Angka Ganjil:", number[i]);
+//     }
+// }
+
+// let ganjil = number.filter((num) => num % 2 !== 0);
+// console.log("Angka Ganjil:", ganjil);
+
+// for (let i = 0; i <= number.length; i++) {
+//     console.log(i, "x", 1, "=", i * 1);
+// }
+
+let total = 0
+//untuk //definisi kondisi
+for     (let i = 0; i < 5; i++) {//---lakukan
+    total += number[i];//apa yang dilakukan
+    console.log(`i=${i}, total=${total}`);
+}
+//artinya
+//untuk kondisi berikut: i dimulai dari 0, selama i kurang dari 5, maka lakukan increment i sebanyak 1 setiap kali loop selesai. maka lakukan
+//penjumlahan total dengan number[i] setiap kali loop selesai. sehingga total akan menjadi 1+2+3+4+5 = 15
