@@ -55,12 +55,33 @@ let number = [1,2,3,4,5,6,7,8,9,10];
 //     console.log(i, "x", 1, "=", i * 1);
 // }
 
-let total = 0
-//untuk //definisi kondisi
-for     (let i = 0; i < 5; i++) {//---lakukan
-    total += number[i];//apa yang dilakukan
-    console.log(`i=${i}, total=${total}`);
-}
+// let total = 0
+// //untuk //definisi kondisi
+// for     (let i = 10; i <= 20; i+=2) {//---lakukan
+//     total += i;//apa yang dilakukan
+//     console.log(`i=${i} -> total=${total}`);
+// }
 //artinya
 //untuk kondisi berikut: i dimulai dari 0, selama i kurang dari 5, maka lakukan increment i sebanyak 1 setiap kali loop selesai. maka lakukan
 //penjumlahan total dengan number[i] setiap kali loop selesai. sehingga total akan menjadi 1+2+3+4+5 = 15
+
+let nilai = [80, 76, 90, 60, 100];
+// for (let index = 0; index < nilai.length; index++) {
+//     if (nilai[index] >= 90) {
+//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai A");
+//     } else if (nilai[index] >= 80 && nilai[index] < 90) {
+//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai B");
+//     } else if (nilai[index] >= 70 && nilai[index] < 80) {
+//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai C");
+//     } else if (nilai[index] >= 60 && nilai[index] < 70) {
+//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai D");
+//     }
+// }
+let nilaiA=nilai.filter((num) => num >= 90);
+let nilaiB=nilai.filter((num) => num >= 80 && num < 90);
+let nilaiC=nilai.filter((num) => num >= 70 && num < 80);
+let nilaiD=nilai.filter((num) => num >= 60 && num < 70);
+console.log("Nilai A:", nilaiA);
+console.log("Nilai B:", nilaiB);
+console.log("Nilai C:", nilaiC);
+console.log("Nilai D:", nilaiD);
