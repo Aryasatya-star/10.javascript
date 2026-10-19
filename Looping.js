@@ -35,7 +35,6 @@
 //     console.log(i);
 // }
 
-let number = [1,2,3,4,5,6,7,8,9,10];
 
 // let genap = number.filter((num) => num % 2 === 0);
 // console.log("Angka Genap:", genap);
@@ -65,23 +64,43 @@ let number = [1,2,3,4,5,6,7,8,9,10];
 //untuk kondisi berikut: i dimulai dari 0, selama i kurang dari 5, maka lakukan increment i sebanyak 1 setiap kali loop selesai. maka lakukan
 //penjumlahan total dengan number[i] setiap kali loop selesai. sehingga total akan menjadi 1+2+3+4+5 = 15
 
-let nilai = [80, 76, 90, 60, 100];
+// let nilai = [80, 76, 90, 60, 100];
 // for (let index = 0; index < nilai.length; index++) {
 //     if (nilai[index] >= 90) {
-//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai A");
+//         console.log("Nilai Ujian", nilai[index], "Atas Rata-Rata");
 //     } else if (nilai[index] >= 80 && nilai[index] < 90) {
-//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai B");
+//         console.log("Nilai Ujian", nilai[index], "Bagus");
 //     } else if (nilai[index] >= 70 && nilai[index] < 80) {
-//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai C");
+//         console.log("Nilai Ujian", nilai[index], "Cukup");
 //     } else if (nilai[index] >= 60 && nilai[index] < 70) {
-//         console.log("Nilai Ujian", nilai[index], "Mendapatkan Nilai D");
+//         console.log("Nilai Ujian", nilai[index], "Dibawah Rata-Rata");
 //     }
 // }
-let nilaiA=nilai.filter((num) => num >= 90);
-let nilaiB=nilai.filter((num) => num >= 80 && num < 90);
-let nilaiC=nilai.filter((num) => num >= 70 && num < 80);
-let nilaiD=nilai.filter((num) => num >= 60 && num < 70);
-console.log("Nilai A:", nilaiA);
-console.log("Nilai B:", nilaiB);
-console.log("Nilai C:", nilaiC);
-console.log("Nilai D:", nilaiD);
+// let nilaiA=nilai.filter((num) => num >= 90);
+// let nilaiB=nilai.filter((num) => num >= 80 && num < 90);
+// let nilaiC=nilai.filter((num) => num >= 70 && num < 80);
+// let nilaiD=nilai.filter((num) => num >= 60 && num < 70);
+// console.log("Lulus Dengan Nilai", nilaiA);
+// console.log("Lulus Dengan Nilai", nilaiB);
+// console.log("Lulus Dengan Nilai", nilaiC);
+// console.log("Tidak Lulus Dengan Nilai", nilaiD);
+
+let number = [12, 7, 20, 15, 8, 3, 14, 9];
+
+let evenNumbers = number.filter((num) => num % 2 === 0);
+let oddNumbers = number.filter((num) => num % 2 !== 0);
+for (let i = 0; i < number.length; i++) {
+    if (number[i] % 2 === 0) {
+        if (number[i] > 10) {
+            console.log(number[i], "adalah angka genap >= 10");
+        } else {
+            console.log(number[i], "adalah angka genap <=10");
+        }
+    } else {
+        if (number[i] > 10) {
+            console.log(number[i], "adalah angka ganjil >= 10");
+        } else {
+            console.log(number[i], "adalah angka ganjil <=10");
+        }
+    }
+}
