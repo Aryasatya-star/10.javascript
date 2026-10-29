@@ -85,22 +85,22 @@
 // console.log("Lulus Dengan Nilai", nilaiC);
 // console.log("Tidak Lulus Dengan Nilai", nilaiD);
 
-let number = [12, 7, 20, 15, 8, 3, 14, 9];
+// let number = [12, 7, 20, 15, 8, 3, 14, 9];
 
-let evenNumbers = number.filter((num) => num % 2 === 0);
-let oddNumbers = number.filter((num) => num % 2 !== 0);
-for (let i = 0; i < number.length; i++) {
-    if (number[i] % 2 === 0) {
-        if (number[i] > 10) {
-            console.log(number[i], "adalah angka genap >= 10");
-        } else {
-            console.log(number[i], "adalah angka genap <=10");
-        }
-    } else {
-        if (number[i] > 10) {
-            console.log(number[i], "adalah angka ganjil >= 10");
-        } else {
-            console.log(number[i], "adalah angka ganjil <=10");
-        }
-    }
-}
+// let evenNumbers = number.filter((num) => num % 2 === 0);
+// let oddNumbers = number.filter((num) => num % 2 !== 0);
+// for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 2 === 0) {
+//         if (number[i] > 10) {
+//             console.log(number[i], "adalah angka genap >= 10");
+//         } else {
+//             console.log(number[i], "adalah angka genap <=10");
+//         }
+//     } else {
+//         if (number[i] > 10) {
+//             console.log(number[i], "adalah angka ganjil >= 10");
+//         } else {
+//             console.log(number[i], "adalah angka ganjil <=10");
+//         }
+//     }
+// }
